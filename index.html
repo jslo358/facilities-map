@@ -108,7 +108,7 @@
             overlayMaps[`<span class="layer-dot" style="background:${layerDefinition.color}"></span>${escapeHtml(layerDefinition.name)}`] = group;
         });
 
-        L.circle(center, {
+       /* L.circle(center, {
             radius: 80467.2,
             color: "#ffffff",
             weight: 2,
@@ -117,7 +117,9 @@
             dashArray: "6,6",
             interactive: false
         }).addTo(map);
+        */
 
+        /*
         L.circleMarker(center, {
             color: "#ffffff",
             weight: 2,
@@ -125,6 +127,7 @@
             fillOpacity: 1,
             radius: 7
         }).bindTooltip("Kansas City reference point", { sticky: true }).addTo(map);
+        */
 
         L.control.layers(
             { "Satellite / Aerial": satellite, "Street Map": street },
